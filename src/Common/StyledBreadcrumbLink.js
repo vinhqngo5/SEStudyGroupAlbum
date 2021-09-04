@@ -17,7 +17,7 @@ const StyledBreadcrumb = withStyles((theme) => ({
 }))(Chip);
 
 export default function StyledBreadcrumbLink(props) {
-	const { to, label, icon } = props;
+	const { to, ...newProps } = props;
 	return (
 		<Link
 			style={{
@@ -25,7 +25,7 @@ export default function StyledBreadcrumbLink(props) {
 			}}
 			to={to}
 		>
-			<StyledBreadcrumb component="a" label={label} icon={icon} />
+			<StyledBreadcrumb component="div" {...newProps} />
 		</Link>
 	);
 }

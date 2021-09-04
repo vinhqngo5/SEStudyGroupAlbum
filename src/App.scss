@@ -7,3 +7,28 @@ body {
 	// font-family: "Source Sans Pro", sans-serif;
 	line-height: 1.3em;
 }
+
+.three-lines-break {
+	line-height: 1.5em; /* Sets line height to 1.5 times text size */
+	height: 4.5em; /* Sets the div height to 2x line-height (3 times text size) */
+	width: 100%; /* Use whatever width you want */
+	white-space: normal; /* Wrap lines of text */
+	overflow: hidden; /* Hide text that goes beyond the boundaries of the div */
+	text-overflow: ellipsis; /* Ellipses (cross-browser) */
+	-o-text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow-wrap: break-word;
+	// white-space: pre;
+}
+
+.two-lines-break {
+	line-height: 1.5em; /* Sets line height to 1.5 times text size */
+	height: 3em; /* Sets the div height to 2x line-height (3 times text size) */
+	width: 100%; /* Use whatever width you want */
+	white-space: normal; /* Wrap lines of text */
+	overflow: hidden; /* Hide text that goes beyond the boundaries of the div */
+	text-overflow: ellipsis; /* Ellipses (cross-browser) */
+	-o-text-overflow: ellipsis;
+	overflow-wrap: break-word;
+}

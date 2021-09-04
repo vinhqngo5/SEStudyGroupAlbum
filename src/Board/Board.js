@@ -2,7 +2,7 @@ import React from "react";
 import { Breadcrumbs } from "@material-ui/core";
 import { Home, ExpandMore } from "@material-ui/icons";
 import "./Board.scss";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Album from "Album/Album";
 import Card from "Card/Card";
 import Albums from "Album/Albums";
@@ -15,14 +15,12 @@ function Board(props) {
 			<Router>
 				<Breadcrumbs aria-label="breadcrumb">
 					<StyledBreadcrumbLink
-						component="a"
 						to="/"
 						label="Home"
 						icon={<Home fontSize="small" />}
 						onClick={handleClick}
 					/>
 					<StyledBreadcrumbLink
-						component="a"
 						to="/album"
 						label="AlbumName"
 						onClick={handleClick}
