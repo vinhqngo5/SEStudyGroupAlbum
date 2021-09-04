@@ -66,22 +66,25 @@ function Card(props) {
 						>
 							Vinh Quang Ngo
 						</Typography>
-						<Typography
-							variant="body2"
-							color="textSecondary"
-							component="p"
-							style={{ textAlign: "center", paddingBottom: "10px" }}
-						>
-							<Dotdotdot clamp={1}>Software Developer</Dotdotdot>
-						</Typography>
-						<Typography variant="body2" color="textSecondary" component="p">
-							<Dotdotdot clamp={3}>
+						<Dotdotdot clamp={2}>
+							<Typography
+								variant="body2"
+								color="textSecondary"
+								component="p"
+								style={{ textAlign: "center", paddingBottom: "10px" }}
+							>
+								Software Developer
+							</Typography>
+						</Dotdotdot>
+
+						<Dotdotdot clamp={4}>
+							<Typography variant="body2" color="textSecondary" component="p">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Exercitationem explicabo velit optio odit veritatis, debitis
 								voluptatibus quia earum minima! Laborum quas architecto
 								laudantium consequuntur odit. Ea suscipit repellendus et quos!
-							</Dotdotdot>
-						</Typography>
+							</Typography>
+						</Dotdotdot>
 					</CardContent>
 				</CardActionArea>
 				<CardActions>

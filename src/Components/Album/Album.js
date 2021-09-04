@@ -36,7 +36,7 @@ function Album(props) {
 				<Card />
 			))} */}
 			<Grid container className={classes.root} spacing={2}>
-				<Grid item sm={0} xs={0} md={0} lg={1} />
+				<Grid item sm={false} xs={false} md={false} lg={1} />
 				<Grid item sm={12} xs={12} md={12} lg={10}>
 					<Grid container justifyContent="center" spacing={5}>
 						{Cards.map((value) => (
@@ -45,7 +45,7 @@ function Album(props) {
 							</Grid>
 						))}
 					</Grid>
-					<Grid item sm={0} xs={0} md={0} lg={1} />
+					<Grid item sm={false} xs={false} md={false} lg={1} />
 				</Grid>
 			</Grid>
 		</div>
