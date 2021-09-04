@@ -3,10 +3,10 @@ import { Breadcrumbs } from "@material-ui/core";
 import { Home, ExpandMore } from "@material-ui/icons";
 import "./Board.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Album from "Album/Album";
-import Card from "Card/Card";
-import Albums from "Album/Albums";
-import StyledBreadcrumbLink from "Common/StyledBreadcrumbLink";
+import Album from "Components/Album/Album";
+import Card from "Components/Card/Card";
+import Albums from "Components/Album/Albums";
+import StyledBreadcrumbLink from "Components/Common/StyledBreadcrumbLink";
 
 function Board(props) {
 	const handleClick = () => {};

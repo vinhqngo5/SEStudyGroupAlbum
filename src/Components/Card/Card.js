@@ -56,8 +56,13 @@ function Card(props) {
 						<Typography
 							gutterBottom
 							variant="h6"
-							component="a"
-							style={{ textAlign: "center" }}
+							component="p"
+							style={{
+								textAlign: "center",
+								fontSize: "1.1rem",
+								// fonWeight: "600",
+								marginBottom: "0",
+							}}
 						>
 							Vinh Quang Ngo
 						</Typography>
@@ -83,7 +88,7 @@ function Card(props) {
 					<Button size="small" color="primary">
 						Share
 					</Button>
-					<Button size="small" color="primary" style={{ marginLeft: "23px" }}>
+					<Button size="small" color="primary" style={{ marginLeft: "26px" }}>
 						About me
 					</Button>
 				</CardActions>

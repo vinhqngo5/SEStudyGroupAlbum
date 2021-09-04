@@ -1,6 +1,6 @@
-import AppBar from "AppBar/AppBar";
-import AppFooter from "AppFooter/AppFooter";
-import Board from "Board/Board";
+import AppBar from "Components/AppBar/AppBar";
+import AppFooter from "Components/AppFooter/AppFooter";
+import Board from "Components/Board/Board";
 import "./App.scss";
 function App() {
 	return (

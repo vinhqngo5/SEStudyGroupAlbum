@@ -1,13 +1,5 @@
-import {
-	FormControlLabel,
-	FormLabel,
-	Grid,
-	makeStyles,
-	Paper,
-	Radio,
-	RadioGroup,
-} from "@material-ui/core";
-import Card from "Card/Card";
+import { Grid, makeStyles } from "@material-ui/core";
+import Card from "Components/Card/Card";
 import React from "react";
 import { useParams } from "react-router";
 import "./Album.scss";
@@ -16,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		[theme.breakpoints.down("xs")]: {
 			padding: "50px 50px 0 50px",
-			
 		},
 		[theme.breakpoints.between("sm", "md")]: {
 			padding: "50px 100px 0 100px",
@@ -24,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
 		"@media (min-width: 1280px)": {
 			padding: "50px 50px 0 50px",
 		},
-		
 	},
 
 	control: {
