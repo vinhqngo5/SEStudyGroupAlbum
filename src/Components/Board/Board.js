@@ -7,6 +7,7 @@ import Album from "Components/Album/Album";
 import Card from "Components/Card/Card";
 import Albums from "Components/Album/Albums";
 import StyledBreadcrumbLink from "Components/Common/StyledBreadcrumbLink";
+import AlbumCard from "Components/Album/AlbumCard";
 
 function Board(props) {
 	const handleClick = () => {};

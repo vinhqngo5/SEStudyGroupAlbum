@@ -40,10 +40,15 @@ body {
 }
 
 .inside-board-container {
-	padding: 25px 50px 25px;
-	min-height: 50vh;
+	padding: 25px 50px 0px;
+	min-height: 60vh;
 }
 
+@media only screen and (max-width: 600px) {
+  .inside-board-container {
+		padding: 25px 10px 0px;
+  }
+}
 .inside-board-container-section {
 	padding: 75px 0px;
 }

@@ -10,7 +10,7 @@ import {
 	Typography,
 } from "@material-ui/core";
 import React from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import "./Card.scss";
 import Dotdotdot from "react-dotdotdot";
 
@@ -22,6 +22,7 @@ const useStyles = makeStyles({
 
 function Card(props) {
 	let { AlbumName, CardName } = useParams();
+	let history = useHistory();
 	const classes = useStyles();
 	let rand = Math.floor(Math.random() * 10);
 	let randNext = Math.floor(Math.random() * 10);
@@ -50,7 +51,7 @@ function Card(props) {
 							height: "100px",
 							position: "absolute",
 							top: "10px",
-							left: "40px",
+							left: "45px",
 						}}
 					/>
 					<CardContent style={{ height: "120px", paddingTop: "50px" }}>
@@ -92,7 +93,14 @@ function Card(props) {
 					<Button size="small" color="primary">
 						Share
 					</Button>
-					<Button size="small" color="primary" style={{ marginLeft: "26px" }}>
+					<Button
+						size="small"
+						color="primary"
+						style={{ marginLeft: "26px" }}
+						onClick={() => {
+							history.push("/home/card");
+						}}
+					>
 						About me
 					</Button>
 				</CardActions>

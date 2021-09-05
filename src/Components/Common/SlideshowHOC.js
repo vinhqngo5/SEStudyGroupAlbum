@@ -8,10 +8,10 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 		[theme.breakpoints.down("xs")]: {
-			padding: "50px 50px 0 50px",
+			// padding: "50px 50px 0 50px",
 		},
 		[theme.breakpoints.between("sm", "md")]: {
-			padding: "50px 100px 0 100px",
+			padding: "50px 50px 0 50px",
 		},
 		"@media (min-width: 1280px)": {
 			padding: "50px 50px 0 50px",
