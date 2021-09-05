@@ -40,11 +40,12 @@ body {
 }
 
 .inside-board-container {
-	padding: 50px 50px 0 50px;
+	padding: 25px 50px 25px;
+	min-height: 50vh;
 }
 
 .inside-board-container-section {
-	padding-bottom: 100px;
+	padding: 75px 0px;
 }
 
 .react-slideshow-wrapper {

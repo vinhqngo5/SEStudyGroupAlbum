@@ -23,7 +23,8 @@ const useStyles = makeStyles({
 function Card(props) {
 	let { AlbumName, CardName } = useParams();
 	const classes = useStyles();
-
+	let rand = Math.floor(Math.random() * 10);
+	let randNext = Math.floor(Math.random() * 10);
 	return (
 		<div>
 			{/* <div>Album</div>
@@ -38,12 +39,12 @@ function Card(props) {
 						component="img"
 						alt="Contemplative Reptile"
 						height="65"
-						image="https://picsum.photos/200/300"
+						image={`https://picsum.photos/20${rand}/30${rand}`}
 						title="Contemplative Reptile"
 					/>
 					<Avatar
 						alt="Vinh Quang Ngo"
-						src="https://picsum.photos/200"
+						src={`https://picsum.photos/20${randNext}`}
 						style={{
 							width: "100px",
 							height: "100px",

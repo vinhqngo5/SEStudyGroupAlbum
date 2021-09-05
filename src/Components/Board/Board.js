@@ -34,11 +34,13 @@ function Board(props) {
 					/>
 				</Breadcrumbs>
 
-				<Switch>
-					<Route path="/:AlbumName/:CardName" children={<Card />} />
-					<Route path="/:AlbumName" children={<Album />} />
-					<Route path="/" children={<Albums />} />
-				</Switch>
+				<div className="inside-board-container">
+					<Switch>
+						<Route path="/:AlbumName/:CardName" children={<Card />} />
+						<Route path="/:AlbumName" children={<Album />} />
+						<Route path="/" children={<Albums />} />
+					</Switch>
+				</div>
 			</Router>
 		</div>
 	);
